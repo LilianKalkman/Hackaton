@@ -1,3 +1,6 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  # For details on thRails.application.routes.draw do
+  root "dogs#index"
+
+  get "dogs" => "dogs#index"
 end
