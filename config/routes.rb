@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   root "dogs#index"
 
   get "dogs" => "dogs#index"
+  get "dogs/:id" => "dogs#show", as: :dog
 end
