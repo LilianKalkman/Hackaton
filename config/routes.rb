@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
   # For details on thRails.application.routes.draw do
-  root "dogs#index"
+  resources :dogs
+  root "owners#index"
+  resources :owners do
+    resources :dogs
+  end
 
-  get "dogs" => "dogs#index"
 end
