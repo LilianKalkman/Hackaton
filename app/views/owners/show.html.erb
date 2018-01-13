@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+ <strong>Name:</strong>
+ <%= @owner.name %>
+</p>
+
+<h4>List of Dogs</h4>
+
+<% if @owner.dogs.any? %>
+ <ul>
+   <% @owner.dogs.each do |dog| %>
+     <li><%= dog.name %></li>
+   <% end %>
+ </ul>
+<% else %>
+ <p>This owner has no dogs! </p>
+<% end %>
+
+<%= link_to 'Edit', edit_owner_path(@owner) %> |
+<%= link_to 'Back', owners_path %>
