@@ -5,5 +5,4 @@ Rails.application.routes.draw do
   resources :owners do
     resources :dogs
   end
-
 end
