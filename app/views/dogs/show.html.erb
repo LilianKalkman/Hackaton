@@ -3,3 +3,7 @@
 <p>Age: <%= @dog.age %></p>
 
 <p>Owner: <%= @dog.owner %></p>
+
+<hr>
+
+<%= link_to "[Edit]", edit_dog_path(@dog.id) %>
