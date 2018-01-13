@@ -1,0 +1,14 @@
+<%= form_for @dog do |f| %>
+
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :age %>
+  <%= f.number_field :age %>
+
+  <%= f.label :owner %>
+  <%= f.text_field :owner %>
+
+  <%= f.submit (@dog.new_record? ? "Create" : "Update") %>
+
+<% end %>
