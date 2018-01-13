@@ -1,5 +1,9 @@
 <h1>Dogs</h1>
 
 <% @dogs.each do |dog| %>
-  <p><%= dog.name %></p>
+  <p><%= link_to dog.name, dog_path(dog.id) %></p>
 <% end %>
+
+  <hr>
+
+  <%= link_to "[New Dog]", new_dog_path %>
