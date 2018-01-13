@@ -25,5 +25,5 @@ def create
 
   def edit
     @dog = Dog.find(params[:id])
-end
+  end
 end
