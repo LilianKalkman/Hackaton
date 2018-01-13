@@ -22,4 +22,8 @@ def create
        render 'new'
     end
   end
+
+  def edit
+    @dog = Dog.find(params[:id])
+end
 end
